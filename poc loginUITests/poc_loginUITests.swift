@@ -1,6 +1,6 @@
 //
 //  poc_loginUITests.swift
-//  poc loginUITests
+//  BoilerplateUITests
 //
 //  Created by Piccirilli Federico on 31/05/21.
 //

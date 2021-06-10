@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E1650D162669264A00336A32 /* LoginCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1650D152669264A00336A32 /* LoginCoordinator.swift */; };
+		E18D30662670D6220029A56F /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E18D30652670D6220029A56F /* Coordinator.swift */; };
+		E18D30712671122D0029A56F /* ContentViewFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = E18D30702671122D0029A56F /* ContentViewFactory.swift */; };
+		E18D3074267112EE0029A56F /* ContentPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E18D3073267112EE0029A56F /* ContentPresenter.swift */; };
+		E1B54DB72668CB8600E79C76 /* AppExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1B54DB62668CB8600E79C76 /* AppExtensions.swift */; };
+		E1B54DB92668CE1F00E79C76 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1B54DB82668CE1F00E79C76 /* AppCoordinator.swift */; };
+		E1B54DC826690EF400E79C76 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1B54DC726690EF400E79C76 /* LoginView.swift */; };
 		E1BB578B2664C1F9000BE1C0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1BB578A2664C1F9000BE1C0 /* AppDelegate.swift */; };
 		E1BB578D2664C1F9000BE1C0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1BB578C2664C1F9000BE1C0 /* SceneDelegate.swift */; };
 		E1BB578F2664C1F9000BE1C0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1BB578E2664C1F9000BE1C0 /* ContentView.swift */; };
@@ -15,6 +22,7 @@
 		E1BB57972664C1FA000BE1C0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1BB57952664C1FA000BE1C0 /* LaunchScreen.storyboard */; };
 		E1BB57A22664C1FA000BE1C0 /* poc_loginTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1BB57A12664C1FA000BE1C0 /* poc_loginTests.swift */; };
 		E1BB57AD2664C1FA000BE1C0 /* poc_loginUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1BB57AC2664C1FA000BE1C0 /* poc_loginUITests.swift */; };
+		E1BB57BC2664C22B000BE1C0 /* ApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1BB57BB2664C22B000BE1C0 /* ApiClient.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,7 +43,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		E1BB57872664C1F9000BE1C0 /* poc login.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "poc login.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E1650D152669264A00336A32 /* LoginCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginCoordinator.swift; sourceTree = "<group>"; };
+		E18D30652670D6220029A56F /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		E18D30702671122D0029A56F /* ContentViewFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewFactory.swift; sourceTree = "<group>"; };
+		E18D3073267112EE0029A56F /* ContentPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentPresenter.swift; sourceTree = "<group>"; };
+		E1B54DB62668CB8600E79C76 /* AppExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppExtensions.swift; sourceTree = "<group>"; };
+		E1B54DB82668CE1F00E79C76 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		E1B54DC726690EF400E79C76 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		E1BB57872664C1F9000BE1C0 /* Boilerplate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Boilerplate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1BB578A2664C1F9000BE1C0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E1BB578C2664C1F9000BE1C0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		E1BB578E2664C1F9000BE1C0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -43,12 +58,13 @@
 		E1BB57932664C1FA000BE1C0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		E1BB57962664C1FA000BE1C0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E1BB57982664C1FA000BE1C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E1BB579D2664C1FA000BE1C0 /* poc loginTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "poc loginTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E1BB579D2664C1FA000BE1C0 /* BoilerplateTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BoilerplateTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1BB57A12664C1FA000BE1C0 /* poc_loginTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = poc_loginTests.swift; sourceTree = "<group>"; };
 		E1BB57A32664C1FA000BE1C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E1BB57A82664C1FA000BE1C0 /* poc loginUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "poc loginUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E1BB57A82664C1FA000BE1C0 /* BoilerplateUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BoilerplateUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1BB57AC2664C1FA000BE1C0 /* poc_loginUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = poc_loginUITests.swift; sourceTree = "<group>"; };
 		E1BB57AE2664C1FA000BE1C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E1BB57BB2664C22B000BE1C0 /* ApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiClient.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,10 +92,62 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E13ACBD32671F19E00D05BD3 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				E1B54DB62668CB8600E79C76 /* AppExtensions.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		E13ACBD42671F1AA00D05BD3 /* Abstract */ = {
+			isa = PBXGroup;
+			children = (
+				E18D30652670D6220029A56F /* Coordinator.swift */,
+			);
+			path = Abstract;
+			sourceTree = "<group>";
+		};
+		E1650D142669263B00336A32 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				E13ACBD42671F1AA00D05BD3 /* Abstract */,
+				E18D306F2671120B0029A56F /* Factory */,
+				E1B54DB82668CE1F00E79C76 /* AppCoordinator.swift */,
+				E1650D152669264A00336A32 /* LoginCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		E18D306F2671120B0029A56F /* Factory */ = {
+			isa = PBXGroup;
+			children = (
+				E18D30702671122D0029A56F /* ContentViewFactory.swift */,
+			);
+			path = Factory;
+			sourceTree = "<group>";
+		};
+		E18D3072267112660029A56F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E18D3075267112FB0029A56F /* Presenter */,
+				E1BB578E2664C1F9000BE1C0 /* ContentView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E18D3075267112FB0029A56F /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				E18D3073267112EE0029A56F /* ContentPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
 		E1BB577E2664C1F8000BE1C0 = {
 			isa = PBXGroup;
 			children = (
-				E1BB57892664C1F9000BE1C0 /* poc login */,
+				E1BB57892664C1F9000BE1C0 /* Boilerplate */,
 				E1BB57A02664C1FA000BE1C0 /* poc loginTests */,
 				E1BB57AB2664C1FA000BE1C0 /* poc loginUITests */,
 				E1BB57882664C1F9000BE1C0 /* Products */,
@@ -89,25 +157,29 @@
 		E1BB57882664C1F9000BE1C0 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				E1BB57872664C1F9000BE1C0 /* poc login.app */,
-				E1BB579D2664C1FA000BE1C0 /* poc loginTests.xctest */,
-				E1BB57A82664C1FA000BE1C0 /* poc loginUITests.xctest */,
+				E1BB57872664C1F9000BE1C0 /* Boilerplate.app */,
+				E1BB579D2664C1FA000BE1C0 /* BoilerplateTests.xctest */,
+				E1BB57A82664C1FA000BE1C0 /* BoilerplateUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		E1BB57892664C1F9000BE1C0 /* poc login */ = {
+		E1BB57892664C1F9000BE1C0 /* Boilerplate */ = {
 			isa = PBXGroup;
 			children = (
 				E1BB578A2664C1F9000BE1C0 /* AppDelegate.swift */,
 				E1BB578C2664C1F9000BE1C0 /* SceneDelegate.swift */,
-				E1BB578E2664C1F9000BE1C0 /* ContentView.swift */,
+				E13ACBD32671F19E00D05BD3 /* Utility */,
+				E1650D142669263B00336A32 /* Coordinator */,
+				E18D3072267112660029A56F /* View */,
+				E1B54DC726690EF400E79C76 /* LoginView.swift */,
+				E1BB57BA2664C211000BE1C0 /* Model */,
 				E1BB57902664C1FA000BE1C0 /* Assets.xcassets */,
 				E1BB57952664C1FA000BE1C0 /* LaunchScreen.storyboard */,
 				E1BB57982664C1FA000BE1C0 /* Info.plist */,
 				E1BB57922664C1FA000BE1C0 /* Preview Content */,
 			);
-			path = "poc login";
+			path = Boilerplate;
 			sourceTree = "<group>";
 		};
 		E1BB57922664C1FA000BE1C0 /* Preview Content */ = {
@@ -136,12 +208,20 @@
 			path = "poc loginUITests";
 			sourceTree = "<group>";
 		};
+		E1BB57BA2664C211000BE1C0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E1BB57BB2664C22B000BE1C0 /* ApiClient.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		E1BB57862664C1F9000BE1C0 /* poc login */ = {
+		E1BB57862664C1F9000BE1C0 /* Boilerplate */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E1BB57B12664C1FA000BE1C0 /* Build configuration list for PBXNativeTarget "poc login" */;
+			buildConfigurationList = E1BB57B12664C1FA000BE1C0 /* Build configuration list for PBXNativeTarget "Boilerplate" */;
 			buildPhases = (
 				E1BB57832664C1F9000BE1C0 /* Sources */,
 				E1BB57842664C1F9000BE1C0 /* Frameworks */,
@@ -151,14 +231,14 @@
 			);
 			dependencies = (
 			);
-			name = "poc login";
+			name = Boilerplate;
 			productName = "poc login";
-			productReference = E1BB57872664C1F9000BE1C0 /* poc login.app */;
+			productReference = E1BB57872664C1F9000BE1C0 /* Boilerplate.app */;
 			productType = "com.apple.product-type.application";
 		};
-		E1BB579C2664C1FA000BE1C0 /* poc loginTests */ = {
+		E1BB579C2664C1FA000BE1C0 /* BoilerplateTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E1BB57B42664C1FA000BE1C0 /* Build configuration list for PBXNativeTarget "poc loginTests" */;
+			buildConfigurationList = E1BB57B42664C1FA000BE1C0 /* Build configuration list for PBXNativeTarget "BoilerplateTests" */;
 			buildPhases = (
 				E1BB57992664C1FA000BE1C0 /* Sources */,
 				E1BB579A2664C1FA000BE1C0 /* Frameworks */,
@@ -169,14 +249,14 @@
 			dependencies = (
 				E1BB579F2664C1FA000BE1C0 /* PBXTargetDependency */,
 			);
-			name = "poc loginTests";
+			name = BoilerplateTests;
 			productName = "poc loginTests";
-			productReference = E1BB579D2664C1FA000BE1C0 /* poc loginTests.xctest */;
+			productReference = E1BB579D2664C1FA000BE1C0 /* BoilerplateTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		E1BB57A72664C1FA000BE1C0 /* poc loginUITests */ = {
+		E1BB57A72664C1FA000BE1C0 /* BoilerplateUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E1BB57B72664C1FA000BE1C0 /* Build configuration list for PBXNativeTarget "poc loginUITests" */;
+			buildConfigurationList = E1BB57B72664C1FA000BE1C0 /* Build configuration list for PBXNativeTarget "BoilerplateUITests" */;
 			buildPhases = (
 				E1BB57A42664C1FA000BE1C0 /* Sources */,
 				E1BB57A52664C1FA000BE1C0 /* Frameworks */,
@@ -187,9 +267,9 @@
 			dependencies = (
 				E1BB57AA2664C1FA000BE1C0 /* PBXTargetDependency */,
 			);
-			name = "poc loginUITests";
+			name = BoilerplateUITests;
 			productName = "poc loginUITests";
-			productReference = E1BB57A82664C1FA000BE1C0 /* poc loginUITests.xctest */;
+			productReference = E1BB57A82664C1FA000BE1C0 /* BoilerplateUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -214,7 +294,7 @@
 					};
 				};
 			};
-			buildConfigurationList = E1BB57822664C1F8000BE1C0 /* Build configuration list for PBXProject "poc login" */;
+			buildConfigurationList = E1BB57822664C1F8000BE1C0 /* Build configuration list for PBXProject "Boilerplate" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -227,9 +307,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				E1BB57862664C1F9000BE1C0 /* poc login */,
-				E1BB579C2664C1FA000BE1C0 /* poc loginTests */,
-				E1BB57A72664C1FA000BE1C0 /* poc loginUITests */,
+				E1BB57862664C1F9000BE1C0 /* Boilerplate */,
+				E1BB579C2664C1FA000BE1C0 /* BoilerplateTests */,
+				E1BB57A72664C1FA000BE1C0 /* BoilerplateUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -266,9 +346,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E1B54DB72668CB8600E79C76 /* AppExtensions.swift in Sources */,
+				E18D30712671122D0029A56F /* ContentViewFactory.swift in Sources */,
+				E1B54DB92668CE1F00E79C76 /* AppCoordinator.swift in Sources */,
+				E1650D162669264A00336A32 /* LoginCoordinator.swift in Sources */,
 				E1BB578B2664C1F9000BE1C0 /* AppDelegate.swift in Sources */,
+				E18D3074267112EE0029A56F /* ContentPresenter.swift in Sources */,
+				E1BB57BC2664C22B000BE1C0 /* ApiClient.swift in Sources */,
 				E1BB578D2664C1F9000BE1C0 /* SceneDelegate.swift in Sources */,
+				E1B54DC826690EF400E79C76 /* LoginView.swift in Sources */,
 				E1BB578F2664C1F9000BE1C0 /* ContentView.swift in Sources */,
+				E18D30662670D6220029A56F /* Coordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,12 +381,12 @@
 /* Begin PBXTargetDependency section */
 		E1BB579F2664C1FA000BE1C0 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = E1BB57862664C1F9000BE1C0 /* poc login */;
+			target = E1BB57862664C1F9000BE1C0 /* Boilerplate */;
 			targetProxy = E1BB579E2664C1FA000BE1C0 /* PBXContainerItemProxy */;
 		};
 		E1BB57AA2664C1FA000BE1C0 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = E1BB57862664C1F9000BE1C0 /* poc login */;
+			target = E1BB57862664C1F9000BE1C0 /* Boilerplate */;
 			targetProxy = E1BB57A92664C1FA000BE1C0 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -437,15 +525,15 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"poc login/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Boilerplate/Preview Content\"";
 				DEVELOPMENT_TEAM = AAW9NH5V2G;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = "poc login/Info.plist";
+				INFOPLIST_FILE = BoilerPlate/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "fp.poc-login";
+				PRODUCT_BUNDLE_IDENTIFIER = fp.boilerplate;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -458,15 +546,15 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"poc login/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Boilerplate/Preview Content\"";
 				DEVELOPMENT_TEAM = AAW9NH5V2G;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = "poc login/Info.plist";
+				INFOPLIST_FILE = BoilerPlate/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "fp.poc-login";
+				PRODUCT_BUNDLE_IDENTIFIER = fp.boilerplate;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -491,7 +579,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/poc login.app/poc login";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Boilerplate.app/Boilerplate";
 			};
 			name = Debug;
 		};
@@ -513,7 +601,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/poc login.app/poc login";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Boilerplate.app/Boilerplate";
 			};
 			name = Release;
 		};
@@ -560,7 +648,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		E1BB57822664C1F8000BE1C0 /* Build configuration list for PBXProject "poc login" */ = {
+		E1BB57822664C1F8000BE1C0 /* Build configuration list for PBXProject "Boilerplate" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E1BB57AF2664C1FA000BE1C0 /* Debug */,
@@ -569,7 +657,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E1BB57B12664C1FA000BE1C0 /* Build configuration list for PBXNativeTarget "poc login" */ = {
+		E1BB57B12664C1FA000BE1C0 /* Build configuration list for PBXNativeTarget "Boilerplate" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E1BB57B22664C1FA000BE1C0 /* Debug */,
@@ -578,7 +666,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E1BB57B42664C1FA000BE1C0 /* Build configuration list for PBXNativeTarget "poc loginTests" */ = {
+		E1BB57B42664C1FA000BE1C0 /* Build configuration list for PBXNativeTarget "BoilerplateTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E1BB57B52664C1FA000BE1C0 /* Debug */,
@@ -587,7 +675,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E1BB57B72664C1FA000BE1C0 /* Build configuration list for PBXNativeTarget "poc loginUITests" */ = {
+		E1BB57B72664C1FA000BE1C0 /* Build configuration list for PBXNativeTarget "BoilerplateUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E1BB57B82664C1FA000BE1C0 /* Debug */,
