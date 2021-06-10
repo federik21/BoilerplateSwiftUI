@@ -11,26 +11,21 @@ import SwiftUI
 
 class AppCoordinator: Coordinator {
 
-    var window: UIWindow
+    typealias V = AnyView
+
+    private weak var window: UIWindow?
     
     init(window: UIWindow) {
         self.window = window
     }
     
-    func addChild(otherCoordinator: Coordinator) {
-        
-    }
-    
-    func start<T>(context: Context<T>) {
+    @discardableResult
+    func start(context: Context<Any>) -> AnyView {
         print ("Started app coordinator 🚀")
-        loadFirstPage()
+        
+        // Init the root coordinator, using its window, from SceneDelegate.
+        let coordinator = RootCoordinator(window: window)
+        return AnyView(addChild(coordinator, with: .none))
     }
     
-    func loadFirstPage(){
-        let view = ContentViewFactory.make(with: self)
-        let mainViewController = UIHostingController(rootView: view)
-        window.rootViewController = mainViewController
-        window.makeKeyAndVisible()
-        
-    }
 }
