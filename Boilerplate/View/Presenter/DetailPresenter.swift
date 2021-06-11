@@ -8,9 +8,8 @@
 import SwiftUI
 
 protocol DetailPresenting: ObservableObject {
-    associatedtype U: View
     var viewModel: DetailViewModel { get }
-    func navigate(isPresented: Binding<Bool>) -> U
+    func userWantsToDoSomethingWithButton()
 }
 
 final class DetailPresenter: DetailPresenting {
@@ -20,10 +19,10 @@ final class DetailPresenter: DetailPresenting {
     
     init(coordinator: NavigationDetailCoordinator) {
         self.coordinator = coordinator
-        self.viewModel = DetailViewModel(text: "Ciao")
+        self.viewModel = DetailViewModel(text: "Bao")
     }
     
-    func navigate(isPresented: Binding<Bool>) -> some View {
-        return coordinator.aButtonPressed(isPresented: isPresented)
+    func userWantsToDoSomethingWithButton(){
+        coordinator.doSomething()
     }
   }

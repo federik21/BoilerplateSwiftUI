@@ -11,9 +11,8 @@ struct DetailView<T: DetailPresenting>: View {
     @ObservedObject var presenter: T
     
     var body: some View {
-        NavigationButton(contentView: Text("oki dokei"),
-                         navigationView: { isPresented in
-            self.presenter.navigate(isPresented: isPresented)
+        Button(presenter.viewModel.text, action: {
+            presenter.userWantsToDoSomethingWithButton()
         })
     }
 }

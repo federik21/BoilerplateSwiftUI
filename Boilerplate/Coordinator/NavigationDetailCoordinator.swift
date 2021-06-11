@@ -8,6 +8,7 @@
 import Combine
 import SwiftUI
 
+//How to create a new coordinator
 final class NavigationDetailCoordinator: Coordinator {
 
     private var isPresented: Binding<Bool>
@@ -17,15 +18,15 @@ final class NavigationDetailCoordinator: Coordinator {
     }
     
     func start(context: Context<Any>) -> some View {
+        print("Started navigation detail coordinator 🚀")
         let view = DetailViewFactory.make(with: self)
-        return NavigationLink(destination: view, isActive: isPresented) {
-            EmptyView()
-        }
+        return NavigationLinkWrapper(destination: view, isPresented: isPresented)
     }
-    
-    func aButtonPressed(isPresented: Binding<Bool>) -> some View {
-        print("You rock! ")
-        return EmptyView()
+}
+
+extension NavigationDetailCoordinator {
+    func doSomething(){
+        print("Just did some magic")
     }
     
 }
