@@ -20,6 +20,6 @@ struct RootView<T: RootPresenting>: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        RootView(presenter: RootPresenter(coordinator: RootCoordinator(window: UIWindow())))
+        RootView(presenter: RootPresenter(coordinator: RootCoordinator(window: UIWindow(), auth: AuthManagerSharedPrefs())))
     }
 }

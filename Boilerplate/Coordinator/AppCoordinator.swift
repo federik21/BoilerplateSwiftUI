@@ -24,7 +24,7 @@ class AppCoordinator: Coordinator {
         print ("Started app coordinator 🚀")
         
         // Init the root coordinator, using its window, from SceneDelegate.
-        let coordinator = RootCoordinator(window: window)
+        let coordinator = RootCoordinator(window: window, auth: AuthManagerSharedPrefs())
         return AnyView(addChild(coordinator, with: .none))
     }
     

@@ -11,9 +11,16 @@ class RootCoordinator: Coordinator {
     typealias V = AnyView
     
     private weak var window: UIWindow?
+    
+    var auth: AuthManager
+    
+    var isUserLoggedIn: Bool {
+        return auth.userLogged
+    }
         
-    init(window: UIWindow?) {
+    init(window: UIWindow?, auth: AuthManager) {
         self.window = window
+        self.auth = auth
     }
     
     func start(context: Context<Any>) -> V {
@@ -24,7 +31,7 @@ class RootCoordinator: Coordinator {
     
     func loadLaunchScreen(){
         // When loading a view, always use a factory that builds a SwiftUI View with a Presenter
-        let view = RootViewFactory.make(with: self)
+        let view = RootViewFactory.make(with: self) 
         let navigation = NavigationView { view }
 
         let mainViewController = UIHostingController(rootView: navigation)

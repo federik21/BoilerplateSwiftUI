@@ -8,10 +8,6 @@
 import Combine
 import SwiftUI
 
-struct RootViewModel {
-    let text: String
-}
-
 protocol RootPresenting: ObservableObject {
     associatedtype U: View
     var viewModel: RootViewModel { get }
